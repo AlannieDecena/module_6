@@ -3,6 +3,7 @@ import './App.css';
 import MyComponent from './MyComponent';
 import PropsDisplayer from './ProsDisplayer';
 import Comment from './Comment';
+import Greeting from './Greeting';
 
 function formatName(name) {
   return name.first + ' ' +name.last
@@ -19,6 +20,7 @@ function App() {
         name: 'Hello Kitty',
         avatarUrl: 'https://placekitten.com/g/64/64',
     },
+
 };
 
   return (
@@ -41,6 +43,7 @@ function App() {
       <MyComponent />
       <PropsDisplayer name="Kim" location="AKL" number={3} />
       <Comment user={comment.author} date={comment.date} text={comment.text}/>
+      <Greeting name="Alannie"/>
     </div>
   );
 }

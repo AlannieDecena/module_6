@@ -1,9 +1,14 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import MyComponent from './MyComponent';
-import PropsDisplayer from './ProsDisplayer';
-import Comment from './Comment';
-import Greeting from './Greeting';
+import MyComponent from './components/MyComponent';
+import PropsDisplayer from './components/ProsDisplayer';
+import Comment from './components/Comment';
+import LabGreeting from './components/LabGreeting';
+import Example from './components/Example';
+import Weather from './components/Weather';
+import HookExample from './components/HookExample'
+import HookWeather from './components/HookWeather'
+import ClockDisplay from './components/Clock'
 
 function formatName(name) {
   return name.first + ' ' +name.last
@@ -25,25 +30,20 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <div className="componentBox">
       <h2>{formatName(name)}</h2>
+      </div>
+
       <MyComponent />
       <PropsDisplayer name="Kim" location="AKL" number={3} />
       <Comment user={comment.author} date={comment.date} text={comment.text}/>
-      <Greeting name="Alannie"/>
+      <LabGreeting name="Alannie"/>
+      <Example />
+      <Weather />
+      <HookExample />
+      <HookWeather />
+      <ClockDisplay />
     </div>
   );
 }

@@ -6,9 +6,15 @@ import Comment from './components/Comment';
 import LabGreeting from './components/LabGreeting';
 import Example from './components/Example';
 import Weather from './components/Weather';
-import HookExample from './components/HookExample'
-import HookWeather from './components/HookWeather'
-import ClockDisplay from './components/Clock'
+import HookExample from './components/HookExample';
+import HookWeather from './components/HookWeather';
+import ClockDisplay from './components/Clock';
+import Login from './components/Login';
+import HookLogin from './components/HookLogin';
+import Reservation from './components/Reservation';
+import StudentList from './components/StudentList';
+import RenderEmojis from './components/RenderEmojis';
+
 
 function formatName(name) {
   return name.first + ' ' +name.last
@@ -35,7 +41,7 @@ function App() {
       <h2>{formatName(name)}</h2>
       </div>
 
-      <MyComponent />
+      {/* <MyComponent />
       <PropsDisplayer name="Kim" location="AKL" number={3} />
       <Comment user={comment.author} date={comment.date} text={comment.text}/>
       <LabGreeting name="Alannie"/>
@@ -44,6 +50,11 @@ function App() {
       <HookExample />
       <HookWeather />
       <ClockDisplay />
+      <Login />
+      <HookLogin />
+      <Reservation /> */}
+      <StudentList />
+      <RenderEmojis />
     </div>
   );
 }

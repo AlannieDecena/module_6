@@ -16,12 +16,8 @@ class Login extends Component {
 
         //login successful/true if both values exist and match
         let isLoggedIn = (this.state.username && this.state.password && this.state.username === this.state.password)
-        // this.setState({ loggedIn: isLoggedIn })
-        // this.setState({ loggedIn: notLoggedIn })
-        if ( isLoggedIn ) {
-            this.setState({ loggedIn: isLoggedIn })
-        }
-        else {this.setState({ loggedIn: false })}
+        this.setState({ loggedIn: isLoggedIn })
+       
     }
 
     handleInputChange = (event) => {

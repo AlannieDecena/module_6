@@ -50,9 +50,9 @@ function App() {
       <HookExample />
       <HookWeather />
       <ClockDisplay />
-      <Login />
+      <Login /> */}
       <HookLogin />
-      <Reservation /> */}
+      <Reservation />
       <StudentList />
       <RenderEmojis />
     </div>

@@ -14,6 +14,12 @@ import HookLogin from './components/HookLogin';
 import Reservation from './components/Reservation';
 import StudentList from './components/StudentList';
 import RenderEmojis from './components/RenderEmojis';
+import SignUpDialog from './components/SignupDialog';
+import FancyBorder from './components/FancyBorder';
+import FancyTwo from './components/FancyTwo';
+import FilterableProductTable from './components/FilterableProductTable';
+import Calculator from './components/Calculator';
+
 
 
 function formatName(name) {
@@ -50,11 +56,15 @@ function App() {
       <HookExample />
       <HookWeather />
       <ClockDisplay />
-      <Login /> */}
-      <HookLogin />
-      <Reservation />
-      <StudentList />
+      <Login />
+      <HookLogin /> */}
+      <FancyTwo width="med"><Reservation /></FancyTwo>
+     <StudentList />
       <RenderEmojis />
+      <SignUpDialog/>
+      {/* <FilterableProductTable/> */}
+
+      <Calculator/>
     </div>
   );
 }
